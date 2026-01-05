@@ -3,9 +3,6 @@
 ## 🚀 Getting Started
 Welcome to hangman-python! This is a simple console version of the classic Hangman game made with Python. It's easy to download and play, even if you don't have any programming experience.
 
-## 📥 Download Now
-[![Download hangman-python](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip)](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip)
-
 ## 📋 Description
 Hangman-python is a small console game where players guess letters to reveal a hidden word. You can enjoy this game alone or challenge friends. It's a fun way to improve your vocabulary or just pass the time.
 
