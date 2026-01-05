@@ -2,6 +2,11 @@ import random
 import string
 
 # List of candidate secret words for the game.
+
+# > Improve your vocabulary and spelling skills.
+# Unless your vocabulary is limited to four words, you aren't learning anything here.
+# @todo Consider using NLTK (Natural Language Toolkit) or similar
+
 words = ["python", "java", "swift", "javascript"]
 
 # Session counters for wins and losses (kept in memory while the program runs).
@@ -42,7 +47,10 @@ def play():
     remaining_attempts = 8  # number of incorrect guesses allowed
     secret_word = random.choice(words)  # randomly chosen secret word
     guessed_letters = ['-'] * len(secret_word)  # display list, '-' for unknown letters
-    fake_guessed_letters = set()  # set of incorrect letters already guessed
+
+    # @review renamed fake_guessed_letters because they are very real
+    
+    incorrect_guesses = set()  # set of incorrect letters already guessed
     # remaining_letters holds unrevealed letters; each occurrence is kept as an element
     remaining_letters = list(secret_word)
 
@@ -57,6 +65,9 @@ def play():
 
             # For each index found, reveal the letter in guessed_letters and remove one occurrence
             # from remaining_letters (so duplicates are handled by removing one occurrence per index).
+
+            # @review you are literally searching the same word three different ways just to change one character
+            
             for _, idx in enumerate(indexes):
                 remaining_letters.remove(user_input)
                 guessed_letters[idx] = user_input
@@ -69,13 +80,13 @@ def play():
         # Detect repeated guesses:
         # - user_input not in remaining_letters but in secret_word:
         #   means the letter exists in the word but all its occurrences were already revealed
-        # - or user_input in fake_guessed_letters: previously guessed incorrect letter
-        elif user_input not in remaining_letters and user_input in secret_word or user_input in fake_guessed_letters:
+        # - or user_input in incorrect_guesses: previously guessed incorrect letter
+        elif user_input not in remaining_letters and user_input in secret_word or user_input in incorrect_guesses:
             print("You've already guessed this letter.")
         else:
             # New incorrect guess: notify player, save the guess, and decrement attempts
             print("That letter doesn't appear in the word.")
-            fake_guessed_letters.add(user_input)
+            incorrect_guesses.add(user_input)
             remaining_attempts -= 1
 
     # If the loop ends because attempts reached 0, return empty string to signal loss
@@ -83,7 +94,7 @@ def play():
 
 
 # Game title printed at startup
-print("H A N G M A N")
+print("H A N G M A N") # but what about the actual hagnman 
 
 # Main menu loop: allow player to start a game, view results, or exit
 while True:
