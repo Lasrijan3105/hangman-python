@@ -73,10 +73,10 @@ def play():
         elif user_input not in remaining_letters and user_input in secret_word or user_input in fake_guessed_letters:
             print("You've already guessed this letter.")
         else:
-            # New incorrect guess: notify player, save the guess, and decrement attempts
-            print("That letter doesn't appear in the word.")
-            fake_guessed_letters.add(user_input)
+            # New incorrect guess: decrement attempts, notify player, and save the guess
             remaining_attempts -= 1
+            print(f"That letter doesn't appear in the word, {remaining_attempts} attempts remaining.")
+            fake_guessed_letters.add(user_input)
 
     # If the loop ends because attempts reached 0, return empty string to signal loss
     return ''
